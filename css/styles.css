@@ -1,0 +1,180 @@
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'helvetica', sans-serif;
+    color: #3e2e12;
+
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #0D3D67;
+  height: 6em;
+}
+
+form{
+margin: auto;
+max-width: 500px;
+}
+
+h1 {
+  margin: auto;
+  font-size: 2.5em;
+  font-family: 'Playfair Display', serif;
+  font-kerning: auto;
+  color: white;
+  vertical-align: middle;
+}
+
+h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5em;
+  margin: 0 auto;
+  padding: 20px;
+  color: #0D3D67;
+}
+
+.line{
+height: 10px;
+margin:15px auto;
+padding: 0px 20px;
+border-top:5px solid #0D3D67;
+border-bottom:1px solid #0D3D67;
+background:white;
+max-width: 500px;
+}
+
+p{
+margin: auto;
+font-family: 'Source Sans Pro', sans-serif;
+color: darkgrey;
+font-size: 1em;
+max-width: 80%;
+}
+
+section{
+  text-align: center;
+  background-color: #F5F5F5;
+}
+
+label, option{
+display: block;
+margin:15px 10px 0 10px;
+color: grey;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select{
+  height: 40px;
+  margin: 10px;
+  width: 100%;
+  padding: 15px;
+  color: gray;
+  background: #E6E6E6;
+  border-radius: 6px;
+  border: 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3) inset;
+}
+
+textarea{
+  height: 100px;
+}
+
+input::placeholder{
+padding-right: 10px;
+  text-align: right;
+  font-style: italic;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus{
+background-color: white;
+transition: background-color 1s;
+box-shadow: 0 0 0 2px #0D3D67;
+outline: none;
+}
+
+input[type="checkbox"],input[type="radio"],.container2 div{
+  margin: 10px;
+  color: grey;
+  display: inline;
+}
+
+fieldset{
+    border: none;
+}
+
+.container2 input {
+width: auto;
+}
+
+legend{
+  font-family: 'Playfair Display', serif;
+  padding-top: 20px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #0D3D67;
+}
+
+#button{
+margin: 10px auto;
+padding: 10px;
+color: white;
+font-weight: bold;
+width: 80%;
+background-color: #0D3D67;
+border-radius: 10px;
+box-shadow: 0 0 5px -2px #0D3D67;
+display: block;
+border: none;
+}
+
+#button:hover{
+  box-shadow: 0 0 5px #0D3D67;
+  background-color: #1D2D4B;
+  cursor: pointer;
+  transition: background-color .3s;
+  transition: box-shadow .3s;
+}
+
+footer p {
+  text-align: center;
+  font-style: italic;
+  color: lightgrey;
+  margin:40px auto;
+}
+
+@media only screen and (min-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  select{
+    width: 68%;
+    float: right;
+}
+.part1 label{
+float: left;
+width: 25%;
+height: 40px;
+margin: 10px 0 10px 0;
+padding: 15px 0 15px 0;
+}
+}
