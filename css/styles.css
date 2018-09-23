@@ -24,7 +24,8 @@ header {
 
 form{
 margin: auto;
-max-width: 800px;
+max-width: 700px;
+padding-right: 20px;
 }
 
 h1 {
@@ -111,8 +112,13 @@ box-shadow: 0 0 0 2px #0D3D67;
 outline: none;
 }
 
+#zip{
+  width: 30%;
+margin-right: 39.5%;
+  max-width: 250px;
+}
+
 input[type="checkbox"],input[type="radio"],.container2 div{
-  margin: 10px;
   color: grey;
   display: inline;
 }
@@ -123,6 +129,17 @@ fieldset{
 
 .container2 input {
 width: auto;
+}
+.container2{
+  padding-left: 20px;
+}
+
+.container2 label {
+display: inline-block;
+}
+
+.titleLabel,textarea{
+  margin-left: 0;
 }
 
 legend{
@@ -177,4 +194,9 @@ height: 40px;
 margin: 10px 0 10px 0;
 padding: 15px 0 15px 0;
 }
+
+.container2{
+  padding-left: 10px;
+}
+
 }

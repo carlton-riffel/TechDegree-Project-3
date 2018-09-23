@@ -19,7 +19,9 @@
 </section>
 
 <form action="index.html" method="post" class="formcontainer">
-<fieldset class="part1"> <legend>Contact Information</legend>
+<fieldset class="part1">
+<legend>Contact Information</legend>
+
 <label for="name">Full Name</label>
 <input type="text" id="name" name="full_name" placeholder="required">
 
@@ -99,17 +101,17 @@
 
 <fieldset class="container2"><legend>Newsletter</legend>
 
-<label>Select the newsletters you would like to recieve</label><br>
-<input type="checkbox" value="html_news" name="newsletters"><div>HTML News</div><br>
-<input type="checkbox" value="css_news" name="newsletters"><div>CSS News</div><br>
-<input type="checkbox" value="javascript_news" name="newsletters"><div>Javascript News</div><br>
+<label class="titleLabel">Select the newsletters you would like to recieve</label><br>
+<input type="checkbox" id="htmlNews" value="html_news" name="newsletters"><label for="htmlNews">HTML News</label><br>
+<input type="checkbox" id="cssNews" value="css_news" name="newsletters"><label for="cssNews">CSS News</label><br>
+<input type="checkbox" id="jsNews" value="javascript_news" name="newsletters"><label for="jsNews">Javascript News</label><br>
 
-<label>Select the newsletters you would like to recieve</label><br>
+<label class="titleLabel">Select the newsletters you would like to recieve</label><br>
 
-<input type="radio" id="html" value="html" name="newsletter_format"><div>HTML</div><br>
-<input type="radio" value="plain_text" name="newsletter_format"><div>Plain Text</div><br>
+<input type="radio" id="html" value="html" name="newsletter_format"><label for="html">HTML</label><br>
+<input type="radio" id="plainText" value="plain_text" name="newsletter_format"><label for="plainText">Plain Text</label><br>
 
-<label for="topics">Other topics you'd like to hear about</label><br>
+<label for="topics" class="titleLabel">Other topics you'd like to hear about</label><br>
 <textarea id="topics" name="topics"></textarea><br>
 </fieldset>
 <button type="submit" id="button">Sign Up</button>
